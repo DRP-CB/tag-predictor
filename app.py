@@ -12,7 +12,7 @@ predictor = tf.keras.models.load_model('USE_model.h5')
 
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.MINTY])
-
+server = app.server
 app.layout = dbc.Container(
     [
         dbc.Row(html.H1('Prédiction de tags')),
